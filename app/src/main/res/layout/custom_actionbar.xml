@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        />
+
+    <EditText
+        android:id="@+id/action_bar_editText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Task title"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:textColorHint="@color/whiteDimmed"
+        android:background="@null"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        />
+
+</RelativeLayout>

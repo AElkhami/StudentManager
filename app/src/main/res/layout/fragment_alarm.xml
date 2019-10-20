@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c"
+    tools:context=".view.fragments.AlarmFragment">
+
+
+    <TextView
+        android:id="@+id/alarm_numbers_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please press"
+        android:textColor="@android:color/white"
+        android:layout_gravity="top"
+        android:layout_marginTop="70sp"
+        android:textSize="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <ImageView
+        android:id="@+id/play_image_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play"
+        android:layout_gravity="top"
+        android:layout_marginTop="70sp"
+        android:layout_marginLeft="140sp"/>
+
+    <TextView
+        android:id="@+id/second_text_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" for the to set the alarm"
+        android:textColor="@android:color/white"
+        android:layout_gravity="top"
+        android:layout_marginTop="70sp"
+        android:textSize="20sp"
+        android:layout_marginLeft="170sp"/>
+
+
+
+    <CheckBox
+        android:id="@+id/repeat_chekbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Repeat every 20 min"
+        android:layout_gravity="top|center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="230sp"
+        android:layout_marginLeft="15sp"/>
+
+
+    <Button
+        android:id="@+id/cancel_alarm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="45sp"
+        android:layout_marginLeft="50sp"
+        android:textSize="15sp"
+        />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/start_stop_alarm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50sp"
+        android:src="@drawable/ic_play"/>
+
+
+</FrameLayout>

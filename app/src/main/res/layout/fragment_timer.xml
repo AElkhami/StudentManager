@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c"
+    tools:context=".view.fragments.TimerFragment">
+
+    <View
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle"
+        android:layout_marginBottom="50sp"/>
+
+    <Button
+        android:id="@+id/reset_timer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="45sp"
+        android:layout_marginLeft="50sp"
+        android:textSize="15sp"
+        />
+
+
+    <TextView
+        android:id="@+id/timer_number_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:000"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:textSize="35sp"
+        android:layout_marginBottom="50sp"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/start_stop_timer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50sp"
+        android:src="@drawable/ic_play"/>
+
+</FrameLayout>

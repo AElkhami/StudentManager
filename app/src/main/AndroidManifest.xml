@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elkhamitech.studentmanagerr">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.activities.MainActivity" />
+        <activity android:name=".view.activities.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activities.SignUpActivity" />
+        <activity android:name=".view.activities.LogInActivity" />
+        <activity
+            android:name=".view.activities.MainSubjectActivity"
+            android:parentActivityName=".view.activities.MainActivity"
+            android:theme="@style/SubjectsTheme"/>
+        <activity
+            android:name=".view.activities.MainTodoListActivity"
+            android:parentActivityName=".view.activities.MainActivity"
+            android:theme="@style/TodoTheme"/>
+        <activity
+            android:name=".view.activities.MainProgressReportActivity"
+            android:parentActivityName=".view.activities.MainActivity" />
+        <activity
+            android:name=".view.activities.MainTimeManagerActivity"
+            android:parentActivityName=".view.activities.MainActivity"
+            android:theme="@style/TimeManagerTheme" />
+        <activity
+            android:name=".view.activities.HelpActivity"
+            android:parentActivityName=".view.activities.ProfileActivity" />
+        <activity
+            android:name=".view.activities.ProfileActivity"
+            android:parentActivityName=".view.activities.MainActivity" />
+        <activity
+            android:name=".view.activities.TodoListItemActivity"
+            android:parentActivityName=".view.activities.MainTodoListActivity"
+            android:theme="@style/TodoTheme"/>
+        <activity
+            android:name=".view.activities.EditProfileActivity"
+            android:parentActivityName=".view.activities.ProfileActivity"
+            android:theme="@style/SubjectsTheme"/>
+        <activity
+            android:name=".view.activities.CreateNewSubjectActivity"
+            android:parentActivityName=".view.activities.MainSubjectActivity"
+            android:theme="@style/SubjectsTheme"/>
+
+        <receiver
+            android:name=".businesslogic.notifications.AlarmReceiver"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".view.activities.SubjectMarksMainActivity"
+            android:parentActivityName=".view.activities.MainSubjectActivity"
+            android:theme="@style/SubjectsMarksTheme" />
+
+        <activity android:name=".view.activities.EditSubjectActivity"
+            android:parentActivityName=".view.activities.MainSubjectActivity"
+            android:theme="@style/SubjectsTheme"></activity>
+    </application>
+
+</manifest>

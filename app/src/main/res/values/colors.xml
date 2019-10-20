@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#007C94</color>
+    <color name="colorPrimaryDark">#01627C</color>
+    <color name="colorAccent">#85C265</color>
+    <color name="whiteDimmed">#d3dded</color>
+
+    <color name="buttonsColor">#2E7D32</color>
+
+
+    <color name="a">#EFCE63</color>
+    <color name="a1">#d4ae36</color>
+
+    <color name="b">#EE785E</color>
+    <color name="b1">#d66c54</color>
+
+    <color name="c">#AD475F</color>
+    <color name="c1">#9b3f55</color>
+
+    <color name="d">#533058</color>
+    <color name="e">#AD1457</color>
+</resources>
